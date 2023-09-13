@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#341C02</color>
+    <color name="white">#2E1B1B</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#341C02</color>
+    <color name="purple_700">#341C02</color>
+    <color name="teal_200">#80674d</color>
+    <color name="teal_700">#80674d</color>
+    <color name="green">#19AA1F</color>
+    <color name="teal_800">#f5e0cb</color>    <!-- Özel Renkler -->
+    <color name="customBackground">#F5F5F5</color>
+    <color name="red">#BD2115</color>
+    <color name="blue">#37108C</color>
+    <color name="customText">#333333</color>
+</resources>

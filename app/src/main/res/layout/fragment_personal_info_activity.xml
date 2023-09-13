@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PersonalInfoActivityFragment">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/arrow_down_float"
+        android:gravity="center"
+        android:text="Ad-Soyad:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="12dp"
+        android:background="@color/material_dynamic_neutral80"
+        android:drawableStart="@drawable/baseline_alternate_email_24"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:inputType="phone"
+        android:drawableStart="@drawable/baseline_phone_forwarded_24"
+        android:background="@color/material_dynamic_neutral80"
+        android:hint="Telefon" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:text="Sonraki Sayfa"
+        android:textColor="@color/customBackground" />
+
+
+</LinearLayout>

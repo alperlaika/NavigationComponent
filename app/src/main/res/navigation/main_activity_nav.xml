@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.laikaalper.navigationcomponenthomework.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/personalInfoTransition"
+            app:destination="@id/personalInfoActivityFragment"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoActivityFragment"
+        android:name="com.laikaalper.navigationcomponenthomework.PersonalInfoActivityFragment"
+        android:label="fragment_personal_info_activity"
+        tools:layout="@layout/fragment_personal_info_activity" >
+        <action
+            android:id="@+id/customQuestionsTransion"
+            app:destination="@id/customQuestionsActivityFragment"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/customQuestionsActivityFragment"
+        android:name="com.laikaalper.navigationcomponenthomework.CustomQuestionsActivityFragment"
+        android:label="fragment_custom_questions_activity"
+        tools:layout="@layout/fragment_custom_questions_activity" >
+        <action
+            android:id="@+id/resultTransion"
+            app:destination="@id/resultsActivityFragment"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="personalInfo"
+            app:argType="com.laikaalper.navigationcomponenthomework.data.model.PersonalInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsActivityFragment"
+        android:name="com.laikaalper.navigationcomponenthomework.ResultsActivityFragment"
+        android:label="fragment_results_activity"
+        tools:layout="@layout/fragment_results_activity" >
+        <argument
+            android:name="customInfo"
+            app:argType="com.laikaalper.navigationcomponenthomework.data.model.CustomInfo" />
+    </fragment>
+</navigation>
