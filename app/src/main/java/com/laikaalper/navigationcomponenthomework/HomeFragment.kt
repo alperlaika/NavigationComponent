@@ -9,7 +9,6 @@ import android.widget.EditText
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.color.MaterialColors.getColor
-import com.laikaalper.navigationcomponenthomework.data.model.PersonalInfo
 import com.laikaalper.navigationcomponenthomework.databinding.FragmentCustomQuestionsActivityBinding
 import com.laikaalper.navigationcomponenthomework.databinding.FragmentHomeBinding
 
@@ -22,7 +21,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         design.buttonStartSurvey.setOnClickListener {
 
                 val name = design.editTextName.text.toString()
-            if (design.editTextName.validateText()){
+                if (design.editTextName.validateText()){
                 val action = HomeFragmentDirections.personalInfoTransition(name)
 
                 findNavController().navigate(action)

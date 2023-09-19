@@ -1,10 +1,12 @@
 package com.laikaalper.navigationcomponenthomework
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.laikaalper.navigationcomponenthomework.databinding.FragmentPersonalInfoActivityBinding
 import com.laikaalper.navigationcomponenthomework.databinding.FragmentResultsActivityBinding
@@ -34,14 +36,11 @@ class ResultsActivityFragment : Fragment() {
                 ResultQuestion2.text = "Okuduğunuz Okul: $school"
                 ResultQuestion3.text = "Cinsiyetiniz: $gender"
             }
+
+        buttonHome.setOnClickListener {
+            findNavController().navigateUp()
+           }
         }
-//        design.buttonHome.setOnClickListener {
-//
-//
-//
-//
-//            //
-//        }
         return design.root
     }
 

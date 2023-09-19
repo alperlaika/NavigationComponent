@@ -8,13 +8,13 @@
 
     <LinearLayout
         android:id="@+id/resultlayout"
-        android:layout_width="391dp"
-        android:layout_height="621dp"
-        android:background="@color/purple_700"
+        android:layout_width="409dp"
+        android:layout_height="659dp"
+        android:background="@drawable/leaf"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-1dp">
 
         <TextView
             android:id="@+id/resultName"
@@ -122,5 +122,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ResultQuestion2"
             app:layout_constraintVertical_bias="0.5" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="135dp"
+            android:layout_height="37dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/teal_800"
+            android:text="Ana Sayfa"
+            android:textColor="@color/design_default_color_on_primary" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

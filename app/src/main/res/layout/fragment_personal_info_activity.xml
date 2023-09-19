@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/flowers"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
@@ -24,12 +25,11 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_marginTop="12dp"
-        android:inputType="textEmailAddress"
         android:layout_marginBottom="12dp"
         android:background="@color/material_dynamic_neutral80"
         android:drawableStart="@drawable/baseline_alternate_email_24"
         android:hint="Email"
-        />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextPhone"
@@ -37,10 +37,10 @@
         android:layout_height="45dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
-        android:inputType="phone"
-        android:drawableStart="@drawable/baseline_phone_forwarded_24"
         android:background="@color/material_dynamic_neutral80"
-        android:hint="Telefon" />
+        android:drawableStart="@drawable/baseline_phone_forwarded_24"
+        android:hint="Telefon"
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/buttonNext"

@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomQuestionsActivityFragment"
-    android:orientation="vertical"
+    android:background="@drawable/flowers"
     android:gravity="center"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CustomQuestionsActivityFragment">
 
     <TextView
         android:id="@+id/textViewName"
@@ -25,10 +26,10 @@
         android:layout_height="40dp"
         android:layout_marginTop="6dp"
         android:layout_marginBottom="6dp"
-        android:inputType="number"
-        android:drawableStart="@drawable/baseline_edit_calendar_24"
         android:background="@color/material_dynamic_neutral80"
-        android:hint="Yaşınız" />
+        android:drawableStart="@drawable/baseline_edit_calendar_24"
+        android:hint="Yaşınız"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/editTextQuestion2"
@@ -46,8 +47,8 @@
         android:layout_height="40dp"
         android:layout_marginTop="6dp"
         android:layout_marginBottom="6dp"
-        android:drawableStart="@drawable/baseline_transgender_24"
         android:background="@color/material_dynamic_neutral80"
+        android:drawableStart="@drawable/baseline_transgender_24"
         android:hint="Cinsiyetiniz" />
 
 
